@@ -4,6 +4,9 @@ footer{
     color:white;
     a{
         color:$main-violet;
+        &:hover{
+            color: $primary-cyan;
+        }
     }
 
     .logo{
@@ -30,6 +33,24 @@ footer{
         }
     }
 
+    @media (min-width:767px){
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2rem;
+
+        .logo{
+            width:100px;
+            margin:0;
+            margin-top:2rem;
+        }
+    
+
+        *{
+            margin:0;
+            padding:0;
+        }
+    }
 
 }
 

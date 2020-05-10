@@ -3,4 +3,9 @@
     text-align:center;
     background: url('../images/bg-boost-mobile.svg') no-repeat;
     background-color: $primary-violet;
+
+    @media (min-width:767px){
+        background: url('../images/bg-boost-desktop.svg') no-repeat;
+        background-color: $primary-violet;
+    }
 }
