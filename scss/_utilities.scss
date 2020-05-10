@@ -54,6 +54,12 @@
             filter: brightness(120%);
         }
     }
+    &.btn-dark{
+        background: $main-blue;
+        color:white;
+        font-size:1rem;
+        font-weight:500;
+    }
 
 }
 

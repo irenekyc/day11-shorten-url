@@ -1,0 +1,27 @@
+.result{
+    padding: 1rem 8%;
+    background: lighten($main-violet, 30);
+    .result-card{
+        padding: 1rem 2rem;
+        width:90%;
+        @include ALIGNCENTER;
+        font-size:1rem;
+        background: white;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 15px;
+        
+        .user-input{
+            color: $main-dark;
+            flex:1;
+        }
+        .result-url{
+            color: $primary-cyan;
+            margin-right:2rem;
+        }
+        .btn{
+            border-radius: 5px;;
+        }
+    }
+}
