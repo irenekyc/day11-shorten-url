@@ -1,0 +1,41 @@
+footer{
+    background: $main-dark;
+    text-align:center;
+    color:white;
+    a{
+        color:$main-violet;
+    }
+
+    .logo{
+        width:120px;
+        @include ALIGNCENTER;
+    }
+
+    .nav-links{
+        h3{
+            margin: 1rem 0;
+            padding: 1rem;
+        }
+        li{
+            margin-bottom:1rem;
+        }
+    }
+    .social-media{
+        ul{
+            display:flex;
+            width: 185px;
+            justify-content: space-between;
+            align-items: center;
+            @include ALIGNCENTER;
+        }
+    }
+
+
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

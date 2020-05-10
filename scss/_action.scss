@@ -1,0 +1,39 @@
+.action{
+    padding: 2rem 0;
+    position:relative;
+    &-banner{
+        background: url('../images/bg-shorten-mobile.svg') no-repeat top right;
+        background-color: $main-blue;
+        width:80%;
+        @include ALIGNCENTER;
+        padding: 1rem;
+        border-radius: 0.8rem;
+        text-align: center;
+
+        input{
+            width:100%;
+            height: 40px;
+            padding: 5px 10px;
+            color: $main-color;
+        }
+        .btn{
+            padding: 0.7rem 1.2rem;
+            width:100%;
+            margin-top:0.5rem;
+        }
+
+        input, .btn{
+            border-radius: 5px;
+        }
+    }
+
+    &:after{
+        content:"";
+        width:100%;
+        height:100%;
+        position:absolute;
+        background: lighten($main-violet, 30);
+        top:50%;
+        z-index:-1;
+    }
+}

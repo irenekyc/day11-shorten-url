@@ -1,0 +1,53 @@
+.wrapper{
+    padding: 2rem 4%;
+}
+
+@for $i from 1 through 5{
+    .py-#{$i} {padding: 1rem*$i 0;}
+}
+
+@for $i from 1 through 5{
+    .my-#{$i} {margin: 1rem*$i 0;}
+}
+
+@for $i from 1 through 5{
+    .p-#{$i} {padding: 1rem*$i;}
+}
+
+@mixin ALIGNCENTER{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.x-large{
+    font-size:2.5rem;
+}
+
+.large{
+    font-size:1.5rem;
+}
+
+.heading-text{
+    color: $main-dark;
+}
+.lead{
+    font-size:1rem;
+}
+
+.lh-2{
+    line-height:1.8;
+}
+
+//Button
+.btn{
+    cursor: pointer;
+    padding: 14px 40px;
+    border-radius: 36px;
+    &.btn-primary-cyan{
+        background: $primary-cyan;
+        color:white;
+        font-size:1rem;
+        font-weight:500;
+    }
+
+}

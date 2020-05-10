@@ -1,0 +1,46 @@
+@import 'variables';
+@import 'utilities';
+@import 'header';
+@import 'hero';
+@import 'action';
+@import 'features';
+@import 'cta';
+@import 'footer';
+
+body{
+    background: white;
+    color: $main-violet;
+    font-family: $main-font;
+    font-size:12px;
+    line-height: 1.2;
+}
+
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+button{
+    border:none;
+    outline:none;
+}
+
+img{
+    width:100%;
+}
+
+input{
+    outline:none;
+    border:none;
+}
+
+a{
+    text-decoration: none;
+    color: $main-violet;
+
+}
+
+li{
+    list-style: none;
+}

@@ -1,0 +1,16 @@
+.hero{
+    margin-top: 50px;
+    overflow: hidden;
+
+    &-image{
+        width:110%;
+        margin-right:-70px;
+        margin-left: 70px;
+    }
+    &-intro{
+        padding: 2rem 8%;
+        text-align: center;
+    }
+
+
+}

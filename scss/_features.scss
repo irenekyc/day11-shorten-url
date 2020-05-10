@@ -1,0 +1,58 @@
+.features{
+    background:lighten($main-violet, 30);
+    padding: 2rem 8%;
+    text-align:center;
+
+    .section-title{
+        width:85%;
+        @include ALIGNCENTER;
+    }
+
+    .feature{
+        background: white;
+        border-radius: 5px;
+        position:relative;
+        padding:2rem;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        &-image{
+            position:absolute;
+            background: $main-blue;
+            height:90px;
+            width:90px;
+            border-radius:50%;
+            padding:15px;
+            top: -45px;
+            left:50%;
+            transform: translateX(-50%);
+
+            img{
+                height:50px;
+                width: 50px;
+            }
+        }
+
+        &-copy{
+            margin-top:2rem;
+            }
+
+        &:after{
+            content:"";
+            width:5px;
+            height:3rem;
+            background:$primary-cyan;
+            position:absolute;
+            bottom:-3rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        &:last-child:after{
+            display:none;
+        }
+        
+    }
+}
