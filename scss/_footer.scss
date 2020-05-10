@@ -30,6 +30,15 @@ footer{
             justify-content: space-between;
             align-items: center;
             @include ALIGNCENTER;
+            font-size:1rem;
+            a{
+                color:white;
+                font-size:1.5rem;
+                &:hover{
+                    color: $primary-cyan;
+                }
+            }
+       
         }
     }
 
@@ -49,6 +58,25 @@ footer{
         *{
             margin:0;
             padding:0;
+        }
+    }
+
+    @media (min-width: 900px){
+        padding: 2rem 8%;
+    }
+
+    @media (min-width: 1023px){
+        font-size:1rem;
+        .logo{
+        margin-right:10%;
+        }
+         .social-media{
+            width:20%;
+            max-width: 200px;
+        }
+        .nav-links{
+            width:15%;
+            max-width: 120px;
         }
     }
 

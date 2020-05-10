@@ -35,5 +35,19 @@
         }
     }
 
+    @media (min-width: 1023px){
+        align-items: center;
+        &-intro{
+            padding: 0 8%;
+
+            h1{
+                font-size:3.5rem;
+            }
+            .lead{
+                font-size:1.3rem;
+            }
+        }
+    }
+
 
 }
