@@ -16,10 +16,66 @@ nav{
             height: 3px;
             width:22px;
             background: $main-violet;
+            transition: 0.2s;
 
             &:nth-child(1){
                 margin-top:0;
             }
         }
+        &.show{
+            .btn-line{
+                &:nth-child(1){
+                    transform: rotate(45deg) translate(4.5px ,7px);
+                    
+                }
+                &:nth-child(2){
+                    display:none;
+                }
+                &:nth-child(3){
+                    
+                    transform: rotate(-45deg) translate(-2px ,-1.5px);
+                
+                }
+            }
+           
+        }
     }
+
+    @media (max-width:500px){
+        .nav-links{
+            transition:1s;
+            display:none;
+            &.show{
+                background: $main-blue;
+                display:flex;
+                flex-direction:column;
+                width:300px;
+                padding: 1rem;
+                position:absolute;
+                top:60px;
+                left:50%;
+                transform: translateX(-50%);
+                text-align:center;
+                border-radius: 5px;
+                font-size:1rem;
+
+                *{
+                    margin-top: 1rem;
+                    margin-bottom:1rem;
+                    color:white;
+                }
+                ul{
+                    padding: 1rem 0;
+                    border-bottom: 1px solid $main-color;
+                }
+
+                .btn{
+                    width:80%;
+                    @include ALIGNCENTER;
+                }
+
+            }
+        }
+    }
+    
 }
